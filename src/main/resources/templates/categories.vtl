@@ -1,7 +1,7 @@
 <h1>All categories</h1>
 <ul>
   #foreach ($category in $categories)
-    <li>$category.getName()&nbsp;&nbsp;|&nbsp;&nbsp;<small><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;<a href="/categories/$category.getId()">View Tasks</a></small></li>    
+    <li>$category.getName()&nbsp;&nbsp;<small><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;<a href="/categories/$category.getId()">View Tasks</a></small></li>    
   #end
 </ul>
 <a class="btn btn-success btn-xs" href="/categories/new">Add New Category</a>
